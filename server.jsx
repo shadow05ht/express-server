@@ -10,8 +10,8 @@ const employees = [
 
 app.get("/employees", (res) => {
   let html = "<h2>İşçilər Siyahısı</h2><ul>";
-  employees.forEach((emp) => {
-    html += `<li>ID: ${emp.id}; Ad: ${emp.name}; Yaş: ${emp.age}</li>`;
+  employees.forEach((empl) => {
+    html += `<li>ID: ${empl.id}; Ad: ${empl.name}; Yaş: ${empl.age}</li>`;
   });
   html += "</ul>";
   res.send(html);
